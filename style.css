@@ -1,0 +1,1324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+/* phind nav */
+
+/* Existing styles */
+.navbar {
+  font-size: 18px;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container {
+  padding: 0 40px 0 40px;
+}
+
+/* Style the logo */
+.navbar img {
+  height: 60px;
+  margin-left: auto;
+}
+
+/* Style the navigation items */
+.navbar .navbar-nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Style the SVG icons */
+.navbar .nav-item svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  margin-left: 20px;
+}
+
+.nav-link:focus, .nav-link:hover{
+  color: coral;
+}
+
+.nav-link {
+  color: black;
+}
+
+/* Hover effect for nav links and icons */
+.navbar .nav-link:hover,
+.navbar .nav-item svg:hover {
+  color: coral !important;
+}
+
+/* Active link styling */
+.navbar .nav-link.active,
+.navbar .nav-item svg.active {
+  color: coral;
+}
+
+/* New hover effect for nav links on the right */
+.navbar .navbar-nav .nav-link:hover {
+  text-decoration: underline; /* Underline on hover */
+  font-size: 18px; /* Increase font size on hover */
+}
+
+/* Responsive design */
+@media only screen and (max-width: 990px) {
+  .navbar .nav-buttons {
+    margin: 10px;
+  }
+  .navbar .nav-buttons ul {
+    margin: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .navbar .nav-buttons ul .fas {
+    margin: 20px 5px 10px 20px;
+  }
+}
+
+
+.navbar img {
+  margin-left: 0%;
+}
+
+
+.navbar .navbar-nav .nav-link:hover {
+  color: green;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins" sans-serif;
+ 
+}
+
+.container img {
+  width: 200px;
+  height: auto;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #575757; 
+}
+
+.navbar {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
+}
+
+button {
+  /* ... existing styles ... */
+  font-size: 0.8rem;
+  font-weight: 900;
+  outline: none;
+  border: none;
+  background-color: green;
+  color: aliceblue;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: coral;
+}
+
+
+#home {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 70%,
+      rgba(0, 0, 0, 0)
+    ),
+    url(./images/backgroundhemp.png);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 30px;
+}
+
+.hero-container {
+  margin-top: 80px;
+}
+
+#brand .row {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  flex-wrap: wrap; 
+}
+
+#brand .row img {
+  object-fit: cover; 
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+#home span {
+  color: #f7f7f7;
+}
+.row img {
+  width: 25%;
+}
+
+#new .one {
+  position: relative;
+
+  justify-content: space-between;
+}
+
+#new .row {
+  display: flex;
+}
+
+#new .one img {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#new .one .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #201a1a;
+  font-weight: bold;
+  transition: 0.4s ease;
+  opacity: 0.8;
+  background-color: rgba(26, 26, 27, 0.13);
+  width: 100%;
+  height: 100%;
+}
+
+#new .one .details:hover {
+  background-color: rgb(102, 117, 80);
+  color: white;
+  transition: 0.3s all;
+  display: none;
+}
+#new .one:nth-child(1) .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: start;
+
+  padding: 50px;
+}
+#new .one:nth-child(2) .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: start;
+
+  padding: 50px;
+}
+#new .one:nth-child(3) .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: start;
+
+  padding: 50px;
+}
+
+.login h3 {
+  color: coral;
+  margin-bottom: 0;
+}
+
+.login hr {
+  margin: 5px auto 10px 0;
+  height: 3px;
+  width: 50px;
+}
+
+#featured h3 {
+  color: coral;
+  margin-bottom: 0;
+}
+#featured hr {
+  margin: 5px auto 10px 0;
+  height: 3px;
+  width: 80px;
+}
+
+#featured p {
+  color: black;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.search {
+  background-color: #a5f97e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+/* .product:hover {
+   box-shadow: 4px 4px 20px 2px rgba(0, 128, 0, 0.253); 
+} */
+
+.product img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  border: 2px solid lightgray; 
+  position: relative;
+}
+
+.product .buy-btn {
+  background-color: #fb774b;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+
+.shop-buy-btn {
+  background-color: #fb774b;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-buy-btn:hover {
+  background-color: #4caf50;
+}
+
+hr {
+  width: 60px;
+  height: 3px;
+  opacity: 1;
+  background-color: #fb774b;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.star {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.star i {
+  font-size: 0.9rem;
+  color: goldenrod;
+  transition: color 0.3s ease;
+}
+
+.star i:hover {
+  color: #4caf50;
+}
+
+#banner1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5) 40%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("./images/Background.webp");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  background-repeat: no-repeat; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner1 h1 {
+  color: white;
+  animation: fadeInDown 1s ease-out;
+  animation-fill-mode: both;
+}
+
+#banner1 button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#banner1 button:hover {
+  background-color: coral;
+  transform: translateY(-3px);
+}
+
+#banner1 button:hover:before {
+  transform: scaleY(1);
+}
+
+#banner1 h4 {
+  animation: fadeIn 1s ease-out;
+  animation-fill-mode: both;
+}
+
+#banner1 .banner p{
+  color: white;
+}
+
+.navbar .brand {
+  color: coral;
+  margin: 3px 5px;
+  font-size: 1.5rem;
+}
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.single-product input:focus {
+  outline: none;
+}
+.single-product .buy-btn {
+  background-color: #fb774b;
+  opacity: 1;
+  transition: 0.4s all;
+}
+
+.single-product .buy-btn:hover {
+  background-color: #222222;
+}
+
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart .product-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart th {
+  text-align: left;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #fb774b;
+}
+.cart td {
+  padding: 10px 20px;
+}
+.cart td img {
+  width: 80px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.cart td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+.cart td a {
+  color: #fb774b;
+}
+.cart .remove-btn {
+  color: #fb774b;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #fff;
+  border: none;
+  width: 100%;
+}
+.cart .edit-btn {
+  color: #fb774b;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #fff;
+  border: none;
+  width: 100%;
+}
+.cart .product-info p {
+  margin: 3px;
+}
+.cart-total {
+  display: flex;
+  justify-content: flex-end;
+}
+.cart-total table {
+  width: 100%;
+  max-width: 500px;
+  border-top: 3px solid #fb774b;
+}
+
+.checkout-btn {
+  background-color: #fb774b;
+  color: #fff;
+}
+.checkout-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style the submit button */
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* Error message */
+.text_center {
+  text-align: center;
+  font-size: 14px;
+  color: red;
+}
+
+/* Link to register page */
+#register-url {
+  background-color: #f8f9fa;
+  color: #4caf50;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+}
+
+#register-url:hover {
+  background-color: #e7e9ee;
+}
+
+
+/* new register */
+
+#register-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #495057;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #495057;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#register-btn,
+#login-url {
+  background-color: #fb774b;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#register-btn:hover,
+#login-url:hover {
+  background-color: #4caf50;
+}
+
+p {
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+/* new account */
+#account-form {
+  width: 50%;
+  margin: 35px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#account-form input {
+  margin: 5px auto;
+  padding: 10px; /* Add padding for better interaction */
+  border: 1px solid #ced4da; /* Simple border for input fields */
+  border-radius: 5px; /* Rounded corners for inputs */
+  font-size: 16px; /* Standard font size */
+  width: 100%; /* Full width for mobile responsiveness */
+}
+
+#account-form #change-pass-btn {
+  color: #fff;
+  background-color: #fb774b;
+  padding: 10px 20px; /* Add padding to buttons */
+  border: none; /* Remove default button borders */
+  border-radius: 5px; /* Rounded corners for buttons */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 16px; /* Standard font size */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+#account-form #change-pass-btn:hover {
+  background-color: #e96930; /* Darker shade on hover */
+}
+
+.account-info #orders-btn,
+#logout-btn {
+  color: #fb774b;
+  text-decoration: none;
+  padding: 5px 10px; /* Add padding to buttons */
+  border: 1px solid #fb774b; /* Border for visual distinction */
+  border-radius: 5px; /* Rounded corners for buttons */
+  font-size: 16px; /* Standard font size */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
+
+.account-info #orders-btn:hover,
+#logout-btn:hover {
+  background-color: #e96930; /* Darker shade on hover */
+  color: #fff; /* White text on hover */
+}
+
+
+/* Orders */
+.orders table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.orders .product-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.orders th {
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #fb774b;
+  /* text-align: left; */
+}
+/* .orders th:nth-child(2){
+    /* text-align: right; */
+
+.orders td {
+  padding: 10px 20px;
+}
+.orders td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.orders .order-details-btn {
+  color: #fff;
+  background-color: #fb774b;
+}
+/* Checkout */
+#checkout-form .checkout-small-element {
+  display: inline-block;
+  width: 48%;
+  margin: 10px auto;
+}
+#checkout-form .checkout-large-element {
+  width: 95%;
+}
+#checkout-form .checkout-btn-container {
+  margin: 10px;
+  text-align: right;
+  margin-right: 40px;
+}
+#checkout-form #checkout-btn {
+  color: #fff;
+  background-color: #fb774b;
+}
+/* contact */
+#contact span {
+  color: #fb774b;
+}
+
+/* new  home */
+.new-arrivals {
+  font-size: 14px;
+  display: inline;
+  padding: 5px;
+  background-color: rgba(255, 127, 80, 0.502);
+  color: white;
+}
+
+.heading {
+  color: white;
+  font-size: 74px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.hero-content {
+  color: white;
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.mid-season {
+  font-size: 14px;
+  display: inline;
+  padding: 8px;
+  background-color: rgba(255, 127, 80, 0.502);
+  color: white;
+  margin-bottom: 40px;
+  font-weight: semibold;
+  text-transform: uppercase;
+}
+
+.banner h1 {
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.hero-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-buy-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  background-color: green;
+  text-transform: none;
+  color: aliceblue;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 5px;
+}
+
+.home-icon {
+  font-size: 5rem;
+  color: green;
+}
+
+.home-icon-des {
+  font-weight: 600;
+}
+
+.product-link {
+  text-decoration: none;
+  color: black;
+}
+
+.product-link:hover {
+  color: coral;
+}
+
+.featured-container {
+  margin: 0 100px;
+}
+
+.footer-featured {
+  list-style: none;
+  padding: 0;
+}
+
+.gototop {
+  height: 60px;
+  width: 60px;
+  padding: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  border-radius: 50%;
+  z-index: 10000000000;
+}
+.main-shop{
+  position: relative;
+  display: flex;
+}
+
+.side-bar{
+  /* background-color: #ddd; */
+  position: sticky;
+  z-index: 1020;
+  top:0;
+  left: 20px;
+  height: 100%;
+
+}
+
+.shop-section{
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+
+
+.filter-section{
+  width: 350px;
+}
+
+.form-container{
+  padding:10px 2px;
+}
+
+.title-desc{
+  color: black;
+}
+
+.product-container{
+  gap:50px;
+  display:flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: calc(-1* var(--bs-gutter-y));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.pagination{
+  padding-right: 100px;
+}
+
+.pagination-container{
+  width: 100%;
+}
+
+.sidebar-title{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.quantity-btn{
+  padding: 12px;
+  background-color: green;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+
+
+#review-section{
+  width: 700px;
+
+  background-color: #fff;
+  border-radius: 0px;
+}
+
+
+/* ABOUT US */
+.about-us-main{
+  display: flex;
+  padding: 150px 100px 0 100px;
+  background: linear-gradient(to bottom, #074701bf 70%, rgba(0, 128, 0, 0.677), rgba(255, 255, 255, 0.132) )
+
+}
+
+.about-us{
+  padding: 50px;
+  padding-top: 0;
+
+  width: 70%;
+}
+
+.ternary-title{
+  font-size: 18px;
+  color:lightgreen;
+
+}
+
+
+
+.owners-image img{
+  width: 400px;
+  height: 450px;
+  animation: morph 3.5s linear infinite;
+  object-fit: cover;
+}
+
+.owner-name{
+  position: relative;
+  text-align: center;
+  color: #f5f5f5;
+  font-size:large;
+line-height: 1px;
+
+}
+
+.owner-job{
+  position: relative;
+  text-align: center;
+  color: #f5f5f5;
+  font-size: smaller;
+
+}
+
+.owner-info{
+  position: relative;
+  top: -100px;
+  transition: 0.5s all;
+  opacity: 0;
+}
+
+.owners-image img:hover + .owner-info{
+  opacity:1;
+  backdrop-filter: brightness(50px);
+}
+
+
+@keyframes morph{
+  0%,
+  100% {
+   border-radius: 40% 60% 70% 30% /
+   40% 40% 60% 50%;
+  }
+  34%{
+    border-radius: 70% 30% 50% 50%/
+    30% 30% 70% 70%;
+  }
+  67%{
+    border-radius: 100% 60% 60% 100%/
+    100% 100% 60% 60%;
+  }
+}
+
+.aboutus-h1{
+  color: white;
+  font-size: 48px;
+}
+
+.history{
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.commitment{
+  color: #ccc;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.aboutus-h1-container{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+
+.about-image{
+    margin: 50px;
+  display: flex;
+  gap: 20px;
+  height: 250px;
+  justify-content: center;
+}
+
+.hotel-team{
+  text-align: center;
+}
+
+.management-faces{
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.management-container img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+
+}
+
+.management-container{
+  text-align: left;
+  position: relative;
+  transition: 0.5s all;
+}
+
+.management-name-outer{
+  color: var(--main-color);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 170%;
+}
+
+.management-title-outer{
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+
+.overlay{
+  transform: scale(1.2);
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--main-color-darkshade);
+  transition: 0.7s ease-out;
+}
+
+.management-container:hover .overlay{
+  opacity:1;
+}
+
+.management-name-inner, .management-info, .management-title-inner{
+  color: white;
+  font-size: 20px;
+  text-align: left;
+}
+
+.management-info{
+  font-size: 12px;
+  color: var(--white-color);
+}
+
+.management-name-inner{
+  color: var(--main-color-lightshade);
+  line-height: 1;
+  font-size: 24px;
+}
+
+.management-title-inner{
+  color: #ccc;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.management-socialmedias{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.management-socialmedias a{
+  font-size: 30px;
+  color: var(--white-color);
+}
+
+.management-socialmedias a:nth-child(1):hover{
+  color: #DE6666;
+}
+
+.management-socialmedias a:nth-child(2):hover{
+  color: #3b5998;
+}
+
+.management-socialmedias a:nth-child(3):hover{
+  color: #00acee;
+}
+
+.size30px{
+  font-size: 30px;
+}
+
+.vision{
+  display: flex;
+  justify-content: center;
+}
+
+.visiontitle{
+  text-align: center;
+  width: 1000px;
+}
+
+.values{
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.value-main-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 40px;
+  row-gap: 50px;
+}
+
+.value-container{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.value-title{
+  color: black;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 170%;
+}
+
+.value-icon{
+  font-size: 30px;
+  
+}
+
+.value-info{
+  color:black;
+}
+
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#banner2 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5) 40%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("./images/ad2.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  background-repeat: no-repeat; 
+  /* background-attachment: fixed;  */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Parallax effect */
+}
+
+#banner2 h1 {
+  color: white;
+  /* Animate title */
+  animation: fadeInDown 1s ease-out;
+  animation-fill-mode: both;
+}
+
+#banner2 button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Add a subtle hover effect */
+}
+
+#banner2 button:hover {
+  background-color: coral; /* Green color on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+#banner2 button:hover:before {
+  transform: scaleY(1);
+}
+
+#banner2 h4 {
+  animation: fadeIn 1s ease-out;
+  animation-fill-mode: both;
+}
+
+#banner2 .banner p{
+  color: white;
+}
+
+
+
+#banner3 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5) 40%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("./images/ad3.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  background-repeat: no-repeat; 
+  /* background-attachment: fixed;  */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Parallax effect */
+}
+
+#banner3 h1 {
+  color: white;
+  /* Animate title */
+  animation: fadeInDown 1s ease-out;
+  animation-fill-mode: both;
+}
+
+#banner3 button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Add a subtle hover effect */
+}
+
+#banner3 button:hover {
+  background-color: coral; /* Green color on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+#banner3 button:hover:before {
+  transform: scaleY(1);
+}
+
+#banner3 h4 {
+  animation: fadeIn 1s ease-out;
+  animation-fill-mode: both;
+}
+
+#banner3 .banner p{
+  color: white;
+}
+
+.insta:hover{
+color:  #E1306C;
+}
+
+.fb:hover{
+  color: #4267B2;
+}
+
+.twitter:hover{
+  color:#1DA1F2
+  ;
+}
