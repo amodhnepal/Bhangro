@@ -33,6 +33,10 @@ if(isset($_GET['product_id'])){
                 <input type="text" class="form-control" name="price" value="<?php echo $product['product_price']; ?>" placeholder="Price" required>
             </div>
             <div class="form-group mt-2">
+                <label>Stock</label>
+                <input type="text" class="form-control" name="stock" value="<?php echo $product['stock']; ?>" placeholder="Stock" required>
+            </div>
+            <div class="form-group mt-2">
                 <label>Category</label>
                 <select class="form-select" name="category" required>
                     <option value="fannypacks" <?php if($product['product_category'] == 'fannypacks') echo 'selected'; ?>>Fanny Pack</option>

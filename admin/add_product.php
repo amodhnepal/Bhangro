@@ -21,6 +21,10 @@ include('sidemenu.php');
                 <label for="product-price">Price</label>
                 <input type="text" class="form-control" id="product-price" name="price" placeholder="Price of the product in Rs." required>
             </div>
+            <div class="form-group mt-2">
+                <label for="stock">Stock</label>
+                <input type="text" class="form-control" id="stock" name="stock" placeholder="stock of the product" required>
+            </div>
             
             <div class="form-group mt-2">
                 <label for="form-select">Category</label>
