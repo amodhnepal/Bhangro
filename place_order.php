@@ -39,6 +39,14 @@
                 $stmt1 = $conn->prepare("INSERT INTO order_items (order_id,product_id,product_name,product_image,product_price,product_quantity,user_id,order_date) VALUES(?,?,?,?,?,?,?,?)");
                 $stmt1->bind_param('iissiiis', $order_id, $product_id, $product_name, $product_image, $product_price, $product_quantity, $user_id, $order_date);
                 $stmt1->execute();
+
+                $stmt2 = $conn->prepare("UPDATE products SET stock = stock - ? WHERE product_id = ?");
+
+// Bind the parameters to the SQL query
+$stmt2->bind_param("ii", $product_quantity, $product_id);
+
+// Execute the statement
+$stmt2->execute();
             }
 
             $_SESSION['order_id'] = $order_id;
@@ -62,9 +70,7 @@
             $stmt->bind_param('isisss', $order_cost, $order_status, $user_id, $phone, $address, $order_date);
             $stmt_status = $stmt->execute();
             if(!$stmt_status) {
-                
                 header('location: index.php');
-                
                 exit;
             }
         
@@ -84,8 +90,17 @@
                 $stmt1 = $conn->prepare("INSERT INTO order_items (order_id, product_id, product_name, product_image, product_price, product_quantity, user_id, order_date) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
                 $stmt1->bind_param('iissiiis', $order_id, $product_id, $product_name, $product_image, $product_price, $product_quantity, $user_id, $order_date);
                 $stmt1->execute();
+
+                // Prepare the SQL statement
+            $stmt2 = $conn->prepare("UPDATE products SET stock = stock - ? WHERE product_id = ?");
+
+        // Bind the parameters to the SQL query
+            $stmt2->bind_param("ii", $product_quantity, $product_id);
+
+// Execute the statement
+            $stmt2->execute();
             }
-        
+
             // Store order details in the session
             $_SESSION['order_id'] = $order_id;
             
@@ -103,3 +118,4 @@
         } 
 
     ?>
+
